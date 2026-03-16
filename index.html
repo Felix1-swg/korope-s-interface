@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <center>
+        <div class="header">
+            <h1>Destination Price within ogbomoso <br>(KOROPE)</h1>
+            <b class="price">To know exact price of korope from Agric-Egbeda</b>
+            <input type="number" placeholder="Enter the amount" class="input" id="showcase"><br>
+            <button class="source" onclick="result()">Click Here to check</button>
+
+            <div class="answer" id="outcome">Where your money can take you too </div>
+        </div>
+    </center>
+</body>
+<script>
+    function result(){
+        const accountBalance = Number(document.getElementById('showcase').value);
+       let destination;
+        
+        if(accountBalance >= 250 && accountBalance <= 300){
+            destination = 'Hihgschool'
+            outcome.innerHTML = destination
+        }else if ( accountBalance >301 && accountBalance <=500){
+            destination = "Takie"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >501 && accountBalance <=600){
+            destination = "Stalight - Sabo"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >601 && accountBalance <=700){
+            destination = "Sabo -General"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >701 && accountBalance <=800){
+            destination = "General - School gate"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >701 && accountBalance <=1000){
+            destination = "School gate - Aroje"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >1001 && accountBalance <=1200){
+            destination = "Aroje - Abaa"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >1201 && accountBalance <=1300){
+            destination = "Abaa - Egbeda"
+            outcome.innerHTML = destination
+        }
+        else if ( accountBalance >1301 && accountBalance <=1500){
+            destination = "Egbeda - Ladoku"
+            outcome.innerHTML = destination
+        }
+        else{
+            destination = 'Work hard so you can move around  (so you wont stay at you papa house throug out the day )'
+            outcome.innerHTML = destination
+        }
+    }
+</script>
+</html>
